@@ -1,0 +1,15 @@
+@import '../sass/Globals/index';
+@import '../sass/layout/index';
+@import '../sass/util/index';
+
+
+.logo a{
+    font-size: 18px;
+    font-weight: 700;
+}
+.links:nth-child(2n+1){
+    font-size: 14px;
+}
+.links li{
+    padding-top: 0.4%;
+}
