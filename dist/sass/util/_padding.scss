@@ -1,0 +1,67 @@
+.p{
+    &g1{
+        padding: 1%;
+        &l{
+            padding-left: 1%;
+        }
+        &r{
+            padding-right: 1%;
+        }
+        &b{
+            padding-bottom: 1%;
+        }
+        &t{
+            padding-top: 1%;
+        }
+
+    }
+    &g2{
+        padding: 2%;
+        &l{
+            padding-left: 2%;
+        }
+        &r{
+            padding-right: 2%;
+        }
+        &b{
+            padding-bottom: 2%;
+        }
+        &t{
+            padding-top: 2%;
+        }
+
+    }
+    &g3{
+        padding: 3%;
+        &l{
+            padding-left: 3%;
+        }
+        &r{
+            padding-right: 3%;
+        }
+        &b{
+            padding-bottom: 3%;
+        }
+        &t{
+            padding-top: 3%;
+        }
+
+    }
+    &g5{
+        padding: 5%;
+        &l{
+            padding-left: 5%;
+        }
+        &r{
+            padding-right: 5%;
+        }
+        &b{
+            padding-bottom: 5%;
+        }
+        &t{
+            padding-top: 5%;
+        }
+
+    }
+
+}

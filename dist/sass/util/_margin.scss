@@ -1,140 +1,67 @@
 .m{
-    &g{
+    &g1{
+        margin: 1%;
+        &l{
+            margin-left: 1%;
+        }
+        &r{
+            margin-right: 1%;
+        }
+        &b{
+            margin-bottom: 1%;
+        }
+        &t{
+            margin-top: 1%;
+        }
+
+    }
+    &g2{
+        margin: 2%;
+        &l{
+            margin-left: 2%;
+        }
+        &r{
+            margin-right: 2%;
+        }
+        &b{
+            margin-bottom: 2%;
+        }
+        &t{
+            margin-top: 2%;
+        }
+
+    }
+    &g3{
         margin: 3%;
-        &3l{
+        &l{
             margin-left: 3%;
         }
-        &3r{
+        &r{
             margin-right: 3%;
         }
-        &3b{
+        &b{
             margin-bottom: 3%;
         }
-        &3t{
+        &t{
             margin-top: 3%;
         }
 
     }
-    &g{
+    &g5{
         margin: 5%;
-        &5l{
+        &l{
             margin-left: 5%;
         }
-        &5r{
+        &r{
             margin-right: 5%;
         }
-        &5b{
+        &b{
             margin-bottom: 5%;
         }
-        &5t{
+        &t{
             margin-top: 5%;
         }
 
-    }
-    &g{
-        margin: 10%;
-        &10l{
-            margin-left: 10%;
-        }
-        &10r{
-            margin-right: 10%;
-        }
-        &10b{
-            margin-bottom: 10%;
-        }
-        &10t{
-            margin-top: 10%;
-        }
-    }
-    &g{
-        margin: 15%;
-        &15l{
-            margin-left: 15%;
-        }
-        &15r{
-            margin-right: 15%;
-        }
-        &15b{
-            margin-bottom: 15%;
-        }
-        &15t{
-            margin-top: 15%;
-        }
-    }
-    &g{
-        margin: 20%;
-        &20l{
-            margin-left: 20%;
-        }
-        &20r{
-            margin-right: 20%;
-        }
-        &20b{
-            margin-bottom: 20%;
-        }
-        &20t{
-            margin-top: 20%;
-        }
-    }
-    &g{
-        margin: 30%;
-        &30l{
-            margin-left: 30%;
-        }
-        &30r{
-            margin-right: 30%;
-        }
-        &30b{
-            margin-bottom: 30%;
-        }
-        &30t{
-            margin-top: 30%;
-        }
-    }
-    &g{
-        margin: 40%;
-        &40l{
-            margin-left: 40%;
-        }
-        &40r{
-            margin-right: 40%;
-        }
-        &40b{
-            margin-bottom: 40%;
-        }
-        &40t{
-            margin-top: 40%;
-        }
-    }
-    &g{
-        margin: 50%;
-        &50l{
-            margin-left: 50%;
-        }
-        &50r{
-            margin-right: 50%;
-        }
-        &50b{
-            margin-bottom: 50%;
-        }
-        &50t{
-            margin-top: 50%;
-        }
-    }
-    &g{
-        margin: 60%;
-        &60l{
-            margin-left: 60%;
-        }
-        &60r{
-            margin-right: 60%;
-        }
-        &60b{
-            margin-bottom: 60%;
-        }
-        &60t{
-            margin-top: 60%;
-        }
     }
 
 }

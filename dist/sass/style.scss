@@ -1,15 +1,81 @@
-@import '../sass/Globals/index';
-@import '../sass/layout/index';
-@import '../sass/util/index';
+@import "../sass/Globals/index";
+@import "../sass/layout/index";
+@import "../sass/util/index";
+@import "../sass/util/breakpoint";
+@import "../sass/util/grid";
 
+.logo a {
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+.logo {
+  margin-right: 15%;
+}
+.links:nth-child(2n + 1) {
+  font-size: 14px;
 
-.logo a{
-    font-size: 18px;
-    font-weight: 700;
+  & li {
+    padding-top: 5%;
+  }
 }
-.links:nth-child(2n+1){
-    font-size: 14px;
+.links {
+  /*  @include breakpoint(mobile) {
+    font-size: 40px;
+    .links2 {
+      display: none;
+    }
+  } */
 }
-.links li{
-    padding-top: 0.4%;
+.links2 {
+  margin-right: 7%;
+  padding-top: 0.7%;
+  & li {
+    padding-right: 40%;
+  }
+  & li:nth-child(2) a {
+    border: 1px solid var(--mediumGrey);
+    border-radius: 10px;
+    padding: 15% 40%;
+  }
+}
+
+.hero {
+  height: 100vh;
+  & .image-container {
+    height: 500px;
+    width: 400px;
+    background-image: url("/images/image-hero-desktop.png");
+    background-size: cover;
+  }
+  & .text-container {
+    margin-left: 20%;
+    padding-top: 15%;
+    & h1 {
+      font-size: 65px;
+    }
+    & p {
+      max-width: 60%;
+    }
+  }
+  .btn {
+    border-radius: 10px;
+    background-color: black;
+    height: 50px;
+    width: 140px;
+    padding: 4%;
+    max-width: 100%;
+    & p {
+      color: white;
+      margin-left: 25%;
+      font-size: 14px;
+    }
+  }
+  & .company-container {
+    height: 15px;
+    margin-left: 15%;
+    & img {
+      margin-left: 5%;
+    }
+  }
 }
