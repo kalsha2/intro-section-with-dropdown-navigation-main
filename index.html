@@ -5,93 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <link rel="stylesheet" href="/dist/style.css" />
-
+    <script src="/app/js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
-    <body>
-      <header>
-        <nav>
-          <div class="pg3r">
-            <div class="links flex flexjc-sb">
-              <ul class="flex links1">
-                <div class="logo">
-                  <li><a href="#">Snap</a></li>
-                </div>
-                <li><a href="#">
-                  <div class="dropdown">
-                    <p>Features</p>
-                    <div class="dropdown-list">
-                      <a href="#">
-                        <div class="tile flex flexjc-sb">
-                          <img src="/images/icon-todo.svg" alt="">
-                          <p>Todo List</p>
-                        </div>
-                      </a>
-                      <a href="#">
-                        <div class="tile flex flexjc-sb">
-                          <img src="/images/icon-calendar.svg" alt="">
-                          <p>Calendar</p>
-                        </div>
-                      </a>
-                      <a href="#">
-                        <div class="tile flex flexjc-sb">
-                          <img src="/images/icon-reminders.svg" alt="">
-                          <p>Remindar</p>
-                        </div>
-                      </a>
-                      <a href="#">
-                        <div class="tile flex flexjc-sb">
-                          <img src="/images/icon-planning.svg" alt="">
-                          <p>Planning</p>
-                        </div>
-                      </a>
-                     
-                    </div>
-                  </div>
-                </a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">About</a></li>
-              </ul>
-              <ul class="flex links2">
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
-              </ul>
-            </div>
+  <body>
+    <header>
+      <div class="dropdown-list">
+        <a href="#">
+          <div class="tile flex">
+            <img src="/images/icon-todo.svg" alt="" />
+            <p>Todo List</p>
           </div>
-        </nav>
-      </header>
-      <!-- Hero section -->
-      <section class="hero ">
-        <div class="container grid">
-          <div class="text-container">
-            <h1>Make <br> remote work</h1>
-            <p>Get your team in sync, no matter your location.
-              Streamline processes, create team rituals, and
-              watch productivity soar.</p>
-              <a href="#">
-                <div class="btn">
-                  <p>Learn more</p>
-                </div>
-              </a>  
-              
-            </div>
-          <div class="image-container">
-           
+        </a>
+        <a href="#">
+          <div class="tile flex">
+            <img src="/images/icon-calendar.svg" alt="" />
+            <p>Calendar</p>
           </div>
-          <div class="company-container flex ">
-            <img src="/images/client-databiz.svg" alt="">
-            <img src="/images/client-audiophile.svg" alt="">
-            <img src="/images/client-meet.svg" alt="">
-            <img src="/images/client-maker.svg" alt="">
+        </a>
+        <a href="#">
+          <div class="tile flex">
+            <img src="/images/icon-reminders.svg" alt="" />
+            <p>Remindar</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile flex">
+            <img src="/images/icon-planning.svg" alt="" />
+            <p>Planning</p>
+          </div>
+        </a>
+      </div>
+      <div class="dropdown-list second-list">
+        <a href="#">
+          <p>History</p>
+        </a>
+        <a href="#">
+          <p>Our Team</p>
+        </a>
+        <a href="#">
+          <p>Blog</p>
+        </a>
+      </div>
+      <nav>
+        <div class="pg3r">
+          <div class="links flex flexjc-sb">
+            <ul class="flex links1">
+              <div class="logo">
+                <li><a href="#">Snap</a></li>
+              </div>
+              <li><a href="#" class="features" onclick="tap1"> Features </a></li>
+              <li><a href="#" class="company" onclick="tap2">Company</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <ul class="flex links2">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
           </div>
         </div>
-      </section>
-    </body>
+      </nav>
+    </header>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container flex flexjc-se">
+        <div class="text-container">
+          <h1>
+            Make <br />
+            remote work
+          </h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a href="#">
+            <div class="btn">
+              <p>Learn more</p>
+            </div>
+          </a>
+          <div class="company-container flex">
+            <img src="/images/client-databiz.svg" alt="" />
+            <img src="/images/client-audiophile.svg" alt="" />
+            <img src="/images/client-meet.svg" alt="" />
+            <img src="/images/client-maker.svg" alt="" />
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/images/image-hero-desktop.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function tap1() {
+      document.getElementsByClassName("features").innerHTML = "YOU CLICKED ME!";
+    }
+    function tap2() {
+      document.getElementsByClassName("company").innerHTML = "YOU CLICKED ME!";
+}
+  </script>
 </html>
