@@ -1,13 +1,16 @@
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 
-    &jc-sb{
-        justify-content: space-between;
-    }
-    &jc-c{
-        justify-content: center;
-    }
-    &ai-c{
-        align-items: center;
-    }
+  &jc-sb {
+    justify-content: space-between;
+  }
+  &jc-c {
+    justify-content: center;
+  }
+  &ai-c {
+    align-items: center;
+  }
+  &jc-se {
+    justify-content: space-evenly;
+  }
 }
