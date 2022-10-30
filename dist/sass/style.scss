@@ -31,10 +31,13 @@
     padding: 15% 40%;
   }
 }
+.links a:hover {
+  color: black;
+}
 .features:hover dropdown-list {
-    display: flex;
-    border: 1px solid red;
-  }
+  display: flex;
+  border: 1px solid red;
+}
 
 .dropdown-list {
   display: none;
@@ -54,7 +57,7 @@
     margin-right: 15%;
   }
 }
-.second-list{
+.second-list {
   left: 245px;
   height: 110px;
   width: 100px;
@@ -63,12 +66,13 @@
 }
 .hero {
   height: 100vh;
-  & .container{
-    padding: 0% 10% 0% 2.5% ;
+  & .container {
+    padding: 0% 10% 0% 2.5%;
+    flex-direction: row;
   }
   & .image-container {
     margin-top: 2%;
-    & img{
+    & img {
       height: 600px;
       width: 450px;
     }
@@ -84,28 +88,77 @@
       margin-bottom: 50px;
     }
   }
-  .btn {
-    border-radius: 10px;
-    background-color: black;
-    height: 40px;
-    width: 130px;
-    padding-top: 13px;
-    padding-left: 13px;
-    max-width: 100%;
+}
+.btn {
+  border-radius: 10px;
+  background-color: black;
+  height: 40px;
+  width: 130px;
+  padding-top: 13px;
+  padding-left: 13px;
+  max-width: 100%;
 
-    & p {
-      color: white;
-      margin-left: 15%;
-      margin-top: -2%;
-      font-size: 16px;
-      max-width: 100%;
-    }
+  & p {
+    color: white;
+    margin-left: 15%;
+    margin-top: -2%;
+    font-size: 16px;
+    max-width: 100%;
   }
-  & .company-container {
-    height: 20px;
-    margin-top: 20%;
-    & img {
-     margin-right: 25px;
-    }
+}
+.btn:hover {
+  background-color: white;
+  border: 1px solid black;
+  transition: 0.2s ease-in-out;
+  & p {
+    color: black;
+  }
+}
+.company-container {
+  height: 20px;
+  margin-top: 20%;
+  & img {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .links1:nth-child(2n + 1) {
+    display: none;
+  }
+  .links2 li {
+    display: none;
+  }
+  .logo a {
+    display: block;
+  }
+  .hero .container {
+    flex-direction: column;
+  }
+  .hero .text-container {
+    text-align: center;
+    margin-left: 10px;
+    width: 70%;
+  }
+  .hero .text-container h1 {
+    font-size: 30px;
+  }
+  .hero .text-container p {
+    max-width: 100%;
+  }
+  .hero .image-container img {
+    height: 380px;
+    width: 310px;
+  }
+  .hero .btn {
+    margin-left: 70px;
+    padding-left: 0;
+  }
+  .company-container {
+    height: 15px;
+    max-width: 40%;
+  }
+  .company-container img {
+    margin-right: 15px;
   }
 }
